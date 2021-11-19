@@ -1,0 +1,20 @@
+.airline__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.airline__column {
+    background: white;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.airline__column:last-child {
+    background: black;
+}
+
+.airline__info {
+    padding-left: 50px;
+}
