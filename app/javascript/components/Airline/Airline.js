@@ -4,6 +4,7 @@ import axios from 'axios'
 import Header from './Header'
 import ReviewForm from './ReviewForm'
 import './Airline.css'
+import Review from './Review'
 
 function Airline() {
 
@@ -39,7 +40,7 @@ function Airline() {
         const airline_id = airline.data.id
         axios.post('/api/v1/reviews', {review, airline_id})
             .then(response => {
-                const included = [...airline.included, response.data]
+                const included = [...airline.included, response.data.data]
                 setAirline({...airline, included})
                 setReview({title: '', description: '', score: 0})
             })
@@ -50,6 +51,18 @@ function Airline() {
         e.preventDefault();
 
         setReview({...review, score})
+    }
+
+    let reviews
+    if (loaded && airline.included) {
+    reviews = airline.included.map( (item, index) => {
+            return (
+                <Review 
+                    key={index}
+                    attributes={item.attributes}
+                />
+            )
+        })
     }
 
     return (
@@ -65,7 +78,7 @@ function Airline() {
                                     slug={airline.data.attributes.slug}
                                     reviews={airline.data.relationships.reviews.data}
                                 />
-                            <div className="reviews"></div>
+                            {reviews}
                         </div>
                     </div>
                     <div className="airline__column">

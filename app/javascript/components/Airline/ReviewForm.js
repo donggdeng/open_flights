@@ -22,7 +22,7 @@ function ReviewForm({name, handleChange, handleSubmit, setRating, review}) {
                     <input onChange={handleChange} type="text" name="description" placeholder="Write your review here."/>
                 </div>
                 <div className="reviewForm__field">
-                    <div className="rating__container">
+                    <div className="reviewForm__rating__container">
                         <div className="rating__title__text">
                             Rate This Airline
                         </div>

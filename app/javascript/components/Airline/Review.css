@@ -1,0 +1,21 @@
+.reviewCard {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 20px 20px 0;
+}
+
+.review__title {
+    padding: 20px 0 0 0;
+    font-size: 18px;
+}
+
+.review__description {
+    padding: 0 0 20px 0;
+    font-size: 14px;
+}
+
+.review__rating__container {
+    display: flex;
+    flex-direction: row;
+}
