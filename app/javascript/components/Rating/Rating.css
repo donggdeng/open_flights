@@ -9,7 +9,7 @@
     left: 0;
     overflow: hidden;
     white-space: nowrap;
-    color: yellow;
+    color: #ff9900;
 }
 
 .star__container::before, .stars::before {
