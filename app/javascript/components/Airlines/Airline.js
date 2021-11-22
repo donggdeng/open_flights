@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Rating from '../Rating/Rating'
-import './Airline.css'
+import '../../../assets/stylesheets/Airlines/Airline.css'
 
 function Airline({image_url, name, avg_score, slug}) {
     return (

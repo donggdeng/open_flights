@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import './ReviewForm.css'
+import '../../../assets/stylesheets/Airline/ReviewForm.css'
 
 function ReviewForm({name, handleChange, handleSubmit, setRating, review}) {
     const ratingOptions = [5,4,3,2,1].map( (score, index) => (

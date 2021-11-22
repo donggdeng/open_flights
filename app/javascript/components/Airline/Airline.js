@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import axios from 'axios'
 import Header from './Header'
 import ReviewForm from './ReviewForm'
-import './Airline.css'
+import '../../../assets/stylesheets/Airline/Airline.css'
 import Review from './Review'
 
 function Airline() {

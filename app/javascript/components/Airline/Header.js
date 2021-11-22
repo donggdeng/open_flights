@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import '../../../assets/stylesheets/Airline/Header.css'
 
 function Header({name, image_url, avg_score, slug, reviews}) {
 

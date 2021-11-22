@@ -1,5 +1,5 @@
 import React from 'react'
-import './Rating.css'
+import '../../../assets/stylesheets/Rating/Rating.css'
 
 function Rating({score}) {
     const score_in_percent = (score / 5) * 100

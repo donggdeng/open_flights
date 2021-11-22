@@ -1,5 +1,5 @@
 import React from 'react'
-import './Review.css'
+import '../../../assets/stylesheets/Airline/Review.css'
 import Rating from '../Rating/Rating'
 
 function Review(props) {
